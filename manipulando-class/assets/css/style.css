@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#exemplo {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid #CCC;
+}
+
+.vermelho {
+    background-color: #FF0000;
+}
+
+.verde {
+    background-color: #00FF00;
+}
+
+.azul {
+    background-color: #0000FF;
+}

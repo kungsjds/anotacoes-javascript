@@ -21,8 +21,10 @@ if  ( hora == 12 || hora == 18  ) {
     console.log("Você está na hora do rush!");
 }
 
-
-
+// Para retornar o nome do TIPO de uma variável, basta utilizar o typeof. Como no exemplo abaixo.
+// Possiveis tipos de dados para o javascript => string" | "number" | "bigint" | "boolean" | "symbol" | "undefined" | "object" | "function" | "Null"
+let exemplo = typeof hora;
+// A variável exemplo, irá receber o nome do TIPO da variável, que no caso será "number".
 
 
 // Diferença entre let, var e const. 
