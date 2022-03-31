@@ -1,15 +1,27 @@
+// window.scrollY, retorna a posição atual do scroll vertical da página toda. scrollX posição do scroll horizontal.
+function ocultar() {
+    if ( window.scrollY == 0 ) {
+        
+        document.querySelector('.scrollButton').style.display = 'none';
+        
+        // Mudando pela class também funciona. Porém pela forma de cima, direto no style e display, é muito melhor e mais prático.
+        // document.querySelector('.scrollButton').classList.remove("displayFlex");
+    } else {
+
+        document.querySelector('.scrollButton').style.display = 'flex';
+
+        // Mudando pela class também funciona. Porém pela forma de cima, direto no style e display, é muito melhor e mais prático.
+        // document.querySelector('.scrollButton').classList.add("displayFlex");
+    }    
+}
+
 // Em termos de performance o EventListener não é muito recomendado.
 // É recomendado utilizar: IntersectionObserver. Que é um comando novo.
 window.addEventListener('scroll', ocultar);
 
-// window.scrollY, retorna a posição atual do scroll vertical da página toda. scrollX posição do scroll horizontal.
-function ocultar() {
-    if ( window.scrollY == 0 ) {
-        document.querySelector('.scrollButton').classList.remove("displayFlex");
-    } else {
-        document.querySelector('.scrollButton').classList.add("displayFlex");
-    }    
-}
+// Pode ser feito com um timer, como abaixo. Porém não é recomendado, pois é pior que o eventListener em termos de performance.
+// No exemplo, ele irá ficar executando a cada 1 segundo sempre. Diferente do eventListener, que só irá executar quando o scroll for alterado.
+// setInterval(ocultar, 1000);
 
 // scrollTo, leva a posição do scroll até a informada. Utilizando da forma abaixo, para deixar de forma suave.
 function backToTop() {
