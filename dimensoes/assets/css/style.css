@@ -1,0 +1,17 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    margin: 20px;
+    padding: 0;
+}
+
+.texto {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #FF0000;
+    background-color: #CCC;
+    overflow: auto;
+    padding: 20px;
+}

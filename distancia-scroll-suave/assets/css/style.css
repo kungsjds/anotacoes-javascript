@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.texto {
+    margin: 20px;
+    width: 200px;
+    height: 2000px;
+    overflow: auto;
+    background-color: #CCC;
+    border: 2px solid #FF0000;
+}
+
+.scrollButton {    
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #171717;
+    color: #FFF;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;    
+    z-index: 9999;
+    cursor: pointer;
+    /* z-index é o posicionamento do elemento sobre outros, colocando 9999 ele sempre irá ficar acima de todos os elementos. */
+}
+
+.displayFlex {
+    display: flex;
+}
