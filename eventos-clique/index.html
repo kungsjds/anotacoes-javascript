@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Eventos de Clique</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Evento ao passar o mouse sobre o elemento -->
+            <h1 onmouseover="passouMouse('.tituloPrincipal')" class="tituloPrincipal">Passe o mouse aqui!</h1>
+
+            <!-- O "this" é referente ao próprio elemento. Tem exatament o mesmo efeito do:
+                document.querySelector('.divButton').innerHTML -->
+            <div onclick="clicou(), this.innerHTML='Alterado com sucesso!'" class="divButton">Clique aqui!</div>
+
+            <div onclick="rightAlign()" class="divButton">Alinhar a direita</div>
+            <div onclick="leftAlign()" class="divButton">Alinhar a esquerda</div>
+            <div onclick="centerAlign()" class="divButton">Alinhar ao meio</div>
+
+            <!-- Evento ao sair com o mouse do elemento -->
+            <h1 onmouseleave="tirouMouse('.tituloSecundario')" class="tituloSecundario">Passe o mouse aqui também!</h1>
+
+            <script type="text/javascript" src="assets/js/script.js"></script>
+        </div>
+    </body>
+</html>
