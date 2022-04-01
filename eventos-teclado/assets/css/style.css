@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    margin: 20px;
+}
+
+input[type=text] {
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.3em;
+    border-radius: 15px;
+    border: 1px solid #171717;
+    box-shadow: 0px 0px 5px #000;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+input[type=text]:hover {
+    box-shadow: 0px 2px 7px #000;
+}
+
+label {
+    margin-left: 20px;
+}
+
+label, span {
+    font-size: 1.2em;
+    margin-right: 5px;
+    text-shadow: 0px 1px 2px #000;
+    box-shadow: 0px 0px 5px #171717;
+    padding: 10px;
+}
+
+#gameConffirmed {
+    display: none;
+    margin: 20px;
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 1.5em;
+    padding: 10px;
+    width: 460px;
+    box-shadow: 0px 0px 10px #0000FF;
+    background-color: #000;
+    color: #FFF;
+}
