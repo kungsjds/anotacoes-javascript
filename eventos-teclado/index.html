@@ -16,11 +16,13 @@
         <!-- onkeyup, irá registrar o evento ao soltar o clique do botão, se mantiver pressionado, não irá registrar nenhum evento, até que solte o botão -->
         <!-- onkeydown, irá registrar o evento ao clicar no botão, então se mantiver pressionado, irá continuar registrando o evento até soltar -->
         <!-- O parametro "event" é igual ao "this", só que representa o próprio evento, podendo acessar as informações dele pelo javascript. Como o código do botão que foi clicado -->
-        <input onkeyup="returnName(event)" type="text" name="gameDescription" placeholder="Digite seu jogo favorito"  /><br/>
-
-        <label>Jogo Favorito: </label><span id="gameName">O nome do jogo aparecerá aqui.</span>
+        <input onkeyup="returnName(event, this)" type="text" name="gameDescription" placeholder="Digite seu jogo favorito"  /><br/>
 
         <p id="gameConffirmed">Jogo favorito registrado. Esse jogo é incrível!</p>
+
+        <label>Jogo Favorito: </label><span id="gameName">O nome do jogo aparecerá aqui.</span>
+        
+        <div onclick="gameRerun()" class="buttonRerun">Refazer</div>
 
         <script type="text/javascript" src="assets/js/script.js"></script>
     </body>
