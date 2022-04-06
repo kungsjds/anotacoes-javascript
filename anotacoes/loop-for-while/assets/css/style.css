@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#loopFor,
+#loopForArray,
+#loopWhile {
+    margin-left: 10px;
+}
