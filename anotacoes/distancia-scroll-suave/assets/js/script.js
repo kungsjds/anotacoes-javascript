@@ -15,6 +15,11 @@ function ocultar() {
     }    
 }
 
+
+// https://evertonstrack.com.br/introducao-ao-intersection-observer/#:~:text=Intersection%20Observer,a%20observação%20do%20elemento%20iObserver.
+// https://tableless.com.br/repaint-reflow-layout-thrashing-performance-alem-do-carregamento/
+// https://tableless.com.br/performance-no-scroll-com-intersectionobserver/
+// https://br.atsit.in/archives/33582
 // Em termos de performance o EventListener não é muito recomendado.
 // É recomendado utilizar: IntersectionObserver. Que é um comando novo.
 window.addEventListener('scroll', ocultar);
