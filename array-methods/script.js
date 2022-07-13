@@ -34,4 +34,30 @@ house.sort();
 house.reverse();
 res = house;
 
+
+let nums = [30, 5, 63, 7, 34, 57];
+let nums2 = [];
+
+// map(function(x)) = Loop through all array elements and return a value for each element.
+nums2 = nums.map(function(value){
+    return value * 2;
+});
+
+// filter(function(x)) = Loop through all array elements and return a value if true. If false will not set a value in the new array.
+nums2 = nums.filter(function(value){
+    return (value > 20)? true : false; //Simplified if else
+});
+
+// every(function(x)) = Loop through all array elements and return true or false. It will only return true if all elements are true, if one element is false it will return false.
+nums2 = nums.every(function(value){
+    return (value < 20)? true : false;
+});
+
+// some(function(x)) = Loop through all array elements and return true or false. If only one is true it will return true. It will only return false whether all elements are false
+nums2 = nums.some(function(value){
+    return (value > 30)? true : false;
+});
+
+res = nums2;
+
 console.log(res);
