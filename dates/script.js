@@ -5,6 +5,10 @@ let date = new Date();
 let another_date = Date.now();
 console.log(another_date);
 
+// Return the current date in brazilian format
+let br_date = new Date().toLocaleDateString('pt-BR');
+console.log(br_date);
+
 // Some date params. OBS: 0 = January, 11 = December. Months are like arrays, starting from 0.
 date = new Date(2022, 0, 4);
 
@@ -32,18 +36,31 @@ let date2 = new Date();
 
 // getFullYear() = Return only the year
 res = date2.getFullYear();
+// setFullYear() = Sets the year
+date2.setFullYear(2023);
+res = date2;
 
 // getMonth() = Return only the month number (from 0-January to 11-December)
 res = date2.getMonth();
+// setMonth() = Sets the month
+date2.setMonth(11);
+res = date2;
 
 // getDay() = Return only the number of the day of the week (from 0-Sunday to 6-Saturday). The week starts from Sunday(0)
 res = date2.getDay();
 
 // getDate() = Return only the day number (1-31/30)
 res = date2.getDate();
+// setDate() = Sets the day
+date2.setDate(4);
+date2.setDate( date2.getDate() + 60 ); // Sets the current day + X days
+res = date2;
 
 // getHours() = Return only the hour
 res = date2.getHours();
+// setHours() = Sets the hours
+date2.setHours( date2.getHours() + 24 ); // Sets the current hour + X hours
+res = date2;
 
 // getMinutes() = Return only the minutes
 res = date2.getMinutes();
