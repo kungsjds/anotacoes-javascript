@@ -60,4 +60,22 @@ nums2 = nums.some(function(value){
 
 res = nums2;
 
+let player = [
+    {id: 1, name: 'Kungs', class: 'Mage'},
+    {id: 2, name: 'Harry', class: 'Wizard'},
+    {id: 3, name: 'Legolas', class: 'Archer'}
+];
+
+// find(function(x)) = Return the value of the first element in the array that the condition is true
+let selected = player.find(function(value){
+    return (value.id == 2) ? true : false;
+});
+
+// findIndex(function(x)) = It's the same as find() but will return the value of the position
+selected = player.findIndex(function(value){
+    return (value.id == 3) ? true : false;
+});
+
+res = selected;
+
 console.log(res);
