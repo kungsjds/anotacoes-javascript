@@ -48,6 +48,6 @@ let array = ['First name', 'Second name', 'Third name', 'Fourth name'];
 // let [a, b, c, d] = array;
 // console.log(`${a}, ${b}, ${c}, ${d}`);
 
-// Whether don't want to get some array value, just set ,
+// Whether don't want to get some array value just set: ,
 let [a, ,, d] = array;
 console.log(`${a}, ${d}`);
