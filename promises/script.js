@@ -22,7 +22,7 @@ console.log(`During promises`);
 // 3 <
 // If successful, run this function, getting (resolve) function return
 temp.then(function(result) {
-    console.log(`Temperature: ${result} degrees`);
+    console.log(`Temperature: ${result}`);
 });
 
 // 4 <
