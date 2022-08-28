@@ -12,5 +12,6 @@ let person = {
 };
 
 let { name:firstName, lastname, age = 0} = person;
+let { voc, power } = person.info;
 
 console.log(firstName, lastname, age);
