@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 60px;    
+}
+
+.container {
+    margin: auto;
+}
+
+ul li {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#inputTask {
+    font-size: 15px;
+    padding: 10px;
+}
