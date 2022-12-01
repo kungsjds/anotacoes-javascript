@@ -34,7 +34,6 @@ house.sort();
 house.reverse();
 res = house;
 
-
 let nums = [30, 5, 63, 7, 34, 57];
 let nums2 = [];
 

@@ -11,7 +11,12 @@ let person = {
     },
 };
 
+<<<<<<< HEAD
+let { name:firstName, lastname, age = 0} = person;
+let { voc, power } = person.info;
+=======
 // Destructuring: Declare variables by extracting the value of an object
+>>>>>>> c66c575919c58fbfee011b6c731e863702e68e60
 
 // name:firstName = Change variable name to firstName. | age = 0 = Set a defult value if undefined.
 // let { name:firstName, lastname, age = 0} = person;
